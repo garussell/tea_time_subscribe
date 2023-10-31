@@ -4,5 +4,5 @@ class Subscription < ApplicationRecord
 
   validates_presence_of :title, :price,:status, :frequency 
 
-  enum status: { inactive: 0, active: 1 }
+  enum status: { cancelled: 0, active: 1 }
 end

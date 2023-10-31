@@ -185,6 +185,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
@@ -462,6 +463,46 @@
           null
         ]
       },
+      "/Users/allenrussell/turing_work/mod4/projects/tea_time_subscribe/spec/requests/api/v0/teas_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/allenrussell/turing_work/mod4/projects/tea_time_subscribe/spec/requests/api/v0/unsubscribe_customer_spec.rb": {
         "lines": [
           1,
@@ -590,8 +631,79 @@
           null,
           null
         ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/tea_time_subscribe/app/controllers/api/v0/teas_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/tea_time_subscribe/app/facades/spoonacular_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          6,
+          60,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/tea_time_subscribe/app/services/spoonacular_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/tea_time_subscribe/app/poros/tea_results.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          60,
+          60,
+          60,
+          60,
+          60,
+          null,
+          null
+        ]
+      },
+      "/Users/allenrussell/turing_work/mod4/projects/tea_time_subscribe/app/serializers/serialized_results.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1698776330
+    "timestamp": 1698791163
   }
 }
