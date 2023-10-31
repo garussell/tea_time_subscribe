@@ -111,7 +111,7 @@ Response:
 }
 ```
 
-### - Cancel Subscription
+### Cancel Subscription
 - Endpoint: `PATCH /api/v0/cancel/:id`
 - Description: Cancel a specific subscription.
 - Example Request:
@@ -161,6 +161,11 @@ Response:
           ]     
         }
 ```
+
+## Future Iterations
+- Functionality for adding teas to a customer's subscription is pending.
+- Functionality to add user authentication is pending.
+- Front-end build is pending.
 
 ## Contributors
 - [Allen Russell](allenrusselldev@gmail.com) - GitHub: [@garussell](https://github.com/garussell)
