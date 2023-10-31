@@ -27,7 +27,7 @@ RSpec.describe "Cancel Subscriptions", type: :request do
 
       result = response_data[:data]
 
-      expect(result[:attributes][:status]).to eq("inactive")
+      expect(result[:attributes][:status]).to eq("cancelled")
     end
 
     it "returns an error if subscription is not found" do

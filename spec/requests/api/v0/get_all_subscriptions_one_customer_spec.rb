@@ -22,7 +22,7 @@ RSpec.describe "Subscriptions", type: :request do
       @customer.subscriptions.create(
         title: Faker::Commerce.product_name,
         price: Faker::Commerce.price,
-        status: "inactive",
+        status: "cancelled",
         frequency: Faker::Lorem.word
       )
     end
@@ -41,8 +41,8 @@ RSpec.describe "Subscriptions", type: :request do
       expect(result[0][:attributes][:status]).to eq("active")
       expect(result[1][:attributes][:status]).to eq("active")
 
-      expect(result[2][:attributes][:status]).to eq("inactive")
-      expect(result[3][:attributes][:status]).to eq("inactive")
+      expect(result[2][:attributes][:status]).to eq("cancelled")
+      expect(result[3][:attributes][:status]).to eq("cancelled")
 
       expect(result[0]).to have_key(:id)
       expect(result[0][:id]).to be_a(String)

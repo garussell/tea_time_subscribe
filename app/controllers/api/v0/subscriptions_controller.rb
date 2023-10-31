@@ -28,7 +28,7 @@ class Api::V0::SubscriptionsController < ApplicationController
   def update
     begin
       subscription = Subscription.find(params[:id])
-      if subscription.update(status: "inactive")
+      if subscription.update(status: "cancelled")
         render json: SubscriptionSerializer.new(subscription), status: :ok
       end
     rescue ActiveRecord::RecordNotFound

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       get '/:id/subscriptions', to: 'subscriptions#index'
       post '/subscribe', to: 'subscriptions#create'
       patch '/cancel/:id', to: 'subscriptions#update'
+      get '/teas', to: 'teas#index'
     end
   end
 end

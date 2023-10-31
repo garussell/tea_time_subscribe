@@ -29,8 +29,8 @@ Subscription.all.each do |subscription|
     subscription.teas.create(
       title: Faker::Tea.variety,
       description: Faker::Lorem.sentence,
-      temperature: Faker::Number.between(from: 70.0, to: 100.0),
-      brew_time: Faker::Number.between(from: 2, to: 5)
+      image: Faker::LoremFlickr.image,
+      link: Faker::Internet.url
     )
   end
 end
