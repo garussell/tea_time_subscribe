@@ -14,17 +14,20 @@
     email: Faker::Internet.email,
     address: Faker::Address.street_address
   )
-
+  
   # Seed Subscriptions for each Customer
   2.times do
     customer.subscriptions.create(
       title: Faker::Commerce.product_name,
       price: Faker::Commerce.price,
-      status: Faker::Lorem.word,
+      status: Subscription.statuses.keys.sample,
       frequency: Faker::Lorem.word
-    )
+      )
+    end
   end
-end
+  
+puts "Created #{Customer.count} customers"
+puts "Created #{Subscription.count} subscriptions"
 
 # Seed Teas for each Subscription
 Subscription.all.each do |subscription|
@@ -37,3 +40,5 @@ Subscription.all.each do |subscription|
     )
   end
 end
+
+puts "Created #{Tea.count} teas"
