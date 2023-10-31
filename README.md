@@ -5,11 +5,12 @@ The Tea Time Subscribe API is a Ruby on Rails application that provides subscrip
 ## Table of Contents
 1. [Installation](#installation)
 2. [API Endpoints](#api-endpoints)
-  - [List Subscriptions](#list-subscriptions)
-  - [Subscribe](#subscribe)
-  - [Cancel Subscription](#cancel-subscription)
-  - [List Teas](#list-teas)
-3. [Contributors](#contributors)
+    - [List Subscriptions](#list-subscriptions)
+    - [Subscribe](#subscribe)
+    - [Cancel Subscription](#cancel-subscription)
+    - [List Teas](#list-teas)
+3. [Future Iterations](#future-iterations)
+4. [Contributors](#contributors)
 
 ## Installation
 
