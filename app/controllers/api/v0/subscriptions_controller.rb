@@ -1,4 +1,15 @@
 class Api::V0::SubscriptionsController < ApplicationController
+  def index
+    customer = Customer.find_by(id: params[:id])
+
+    if customer.nil?
+      render json: ErrorSerializer.format_errors("Customer not found"), status: :not_found
+    else
+      subscriptions = customer.subscriptions
+      render json: SubscriptionSerializer.new(subscriptions), status: :ok
+    end
+  end
+  
   def create
     begin
       customer = Customer.find(params[:subscription][:customer_id])
@@ -11,8 +22,6 @@ class Api::V0::SubscriptionsController < ApplicationController
       end
     rescue ActiveRecord::RecordNotFound
       render json: ErrorSerializer.format_errors("Customer not found"), status: :not_found
-    rescue ActiveRecord::RecordInvalid => e
-      render json: ErrorSerializer.format_errors(e.message), status: :bad_request
     end
   end
 
@@ -21,8 +30,6 @@ class Api::V0::SubscriptionsController < ApplicationController
       subscription = Subscription.find(params[:id])
       if subscription.update(status: "inactive")
         render json: SubscriptionSerializer.new(subscription), status: :ok
-      else
-        render json: { error: ErrorSerializer.format_errors(subscription.errors.full_messages.to_sentence) }, status: :bad_request
       end
     rescue ActiveRecord::RecordNotFound
       render json: { error: "Subscription not found" }, status: :not_found
