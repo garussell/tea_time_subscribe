@@ -10,8 +10,6 @@ RSpec.describe "Subscriptions", type: :request do
 
       response_data = JSON.parse(response.body, symbolize_names: true)
       result = response_data[:data]
-
-
     end
   end
 end

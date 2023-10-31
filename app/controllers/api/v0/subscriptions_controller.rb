@@ -16,6 +16,19 @@ class Api::V0::SubscriptionsController < ApplicationController
     end
   end
 
+  def update
+    begin
+      subscription = Subscription.find(params[:id])
+      if subscription.update(status: "inactive")
+        render json: SubscriptionSerializer.new(subscription), status: :ok
+      else
+        render json: { error: ErrorSerializer.format_errors(subscription.errors.full_messages.to_sentence) }, status: :bad_request
+      end
+    rescue ActiveRecord::RecordNotFound
+      render json: { error: "Subscription not found" }, status: :not_found
+    end
+  end
+
   private
 
   def subscription_params
