@@ -114,7 +114,7 @@ Response:
 
 ### Cancel Subscription
 - Endpoint: `PATCH /api/v0/cancel/:id`
-- Description: Cancel a specific subscription.
+- Description: Cancel a specific subscription using the "subscription" ID in URL.
 - Example Request:
 
 `PATCH /api/v0/cancel/21`
