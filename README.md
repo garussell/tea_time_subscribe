@@ -4,13 +4,14 @@ The Tea Time Subscribe API is a Ruby on Rails application that provides subscrip
 
 ## Table of Contents
 1. [Installation](#installation)
-2. [API Endpoints](#api-endpoints)
+2. [Schema](#schema)
+3. [API Endpoints](#api-endpoints)
     - [List Subscriptions](#list-subscriptions)
     - [Subscribe](#subscribe)
     - [Cancel Subscription](#cancel-subscription)
     - [List Teas](#list-teas)
-3. [Future Iterations](#future-iterations)
-4. [Contributors](#contributors)
+4. [Future Iterations](#future-iterations)
+5. [Contributors](#contributors)
 
 ## Installation
 
@@ -35,7 +36,11 @@ Start the Rails server:
 
 `rails server`
 
-The API will be accessible at http://localhost:3000.
+The API will be accessible at http://localhost:3000
+
+## Schema
+
+![Screenshot 2023-11-02 at 11 29 02 AM](https://github.com/garussell/tea_time_subscribe/assets/125214565/94240bb3-c513-41b4-bd98-4e3e2e6d062e)
 
 ## API Endpoints
 
